@@ -5,14 +5,17 @@ import About from "./pages/About";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Profile from "./pages/Profile";
+import Header from "./components/Header";
 export default function App() {
   return (
     <BrowserRouter>
+    {/* header */}
+    <Header/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/sign-up" element={<Signup />} />
+        <Route path="/sign-up" element={<Signup/>} />
         <Route path="/profile" element={<Profile />} />
       </Routes>
     </BrowserRouter>
